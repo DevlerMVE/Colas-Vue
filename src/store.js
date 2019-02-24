@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Hello from './modules/HelloWorld'
+import ItemsWaiting from './modules/ItemsWaiting'
+import HistoricalItems from "./modules/HistoricalItems";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    Hello
+    ItemsWaiting: ItemsWaiting,
+    HistoricalItems: HistoricalItems
   }
 })
